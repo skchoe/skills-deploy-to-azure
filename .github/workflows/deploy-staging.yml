@@ -6,13 +6,9 @@ on:
 
 env:
   IMAGE_REGISTRY_URL: ghcr.io
-  ###############################################
-  ### Replace <username> with GitHub username ###
-  ###############################################
   DOCKER_IMAGE_NAME: skchoe-azure-ttt
   AZURE_WEBAPP_NAME: skchoe-ttt-app
-  ###############################################
-
+  
 jobs:
   build:
     if: contains(github.event.pull_request.labels.*.name, 'stage')
